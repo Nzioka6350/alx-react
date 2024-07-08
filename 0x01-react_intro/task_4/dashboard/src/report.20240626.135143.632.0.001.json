@@ -1,0 +1,309 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20240626.135143.632.0.001.json",
+    "dumpEventTime": "2024-06-26T13:51:43Z",
+    "dumpEventTimeStamp": "1719409903108",
+    "processId": 632,
+    "cwd": "/alx-react/0x01-react_intro/task_4/dashboard/src",
+    "commandLine": [
+      "node",
+      "/root/.nvm/versions/node/v12.11.1/bin/npm",
+      "install"
+    ],
+    "nodejsVersion": "v12.11.1",
+    "glibcVersionRuntime": "2.19",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.11.1",
+      "v8": "7.7.299.11-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1c",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v12.11.1/node-v12.11.1-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.11.1/node-v12.11.1.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.3.0-1032-aws",
+    "osVersion": "#34~18.04.2-Ubuntu SMP Fri Jul 24 10:06:28 UTC 2020",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+        "speed": 3100,
+        "user": 31433803000,
+        "nice": 16031224600,
+        "sys": 74524231200,
+        "idle": 623983797100,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Xeon(R) Platinum 8259CL CPU @ 2.50GHz",
+        "speed": 3100,
+        "user": 31780694400,
+        "nice": 15702479300,
+        "sys": 73382072000,
+        "idle": 625182614400,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "eth0",
+        "internal": false,
+        "mac": "02:42:ac:11:00:15",
+        "address": "172.17.0.21",
+        "netmask": "255.255.0.0",
+        "family": "IPv4"
+      }
+    ],
+    "host": "6ae2a694b331"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000afd845",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::String>) [npm]"
+    },
+    {
+      "pc": "0x00000000009d4603",
+      "symbol": "node::OnFatalError(char const*, char const*) [npm]"
+    },
+    {
+      "pc": "0x0000000000b32dbe",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [npm]"
+    },
+    {
+      "pc": "0x0000000000b33139",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [npm]"
+    },
+    {
+      "pc": "0x0000000000cde455",
+      "symbol": " [npm]"
+    },
+    {
+      "pc": "0x0000000000cdeae6",
+      "symbol": "v8::internal::Heap::RecomputeLimits(v8::internal::GarbageCollector) [npm]"
+    },
+    {
+      "pc": "0x0000000000cea97a",
+      "symbol": "v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::GCCallbackFlags) [npm]"
+    },
+    {
+      "pc": "0x0000000000ceb885",
+      "symbol": "v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [npm]"
+    },
+    {
+      "pc": "0x0000000000cee298",
+      "symbol": "v8::internal::Heap::AllocateRawWithRetryOrFail(int, v8::internal::AllocationType, v8::internal::AllocationAlignment) [npm]"
+    },
+    {
+      "pc": "0x0000000000cb4bc7",
+      "symbol": "v8::internal::Factory::NewFillerObject(int, bool, v8::internal::AllocationType) [npm]"
+    },
+    {
+      "pc": "0x0000000000feaafb",
+      "symbol": "v8::internal::Runtime_AllocateInYoungGeneration(int, unsigned long*, v8::internal::Isolate*) [npm]"
+    },
+    {
+      "pc": "0x000000000136d539",
+      "symbol": " [npm]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 271495168,
+    "totalCommittedMemory": 270178800,
+    "usedMemory": 258667912,
+    "availableMemory": 7300992,
+    "memoryLimit": 271581184,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 32568,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 2097152,
+        "committedMemory": 1311800,
+        "capacity": 1047488,
+        "used": 306696,
+        "available": 740792
+      },
+      "old_space": {
+        "memorySize": 253603840,
+        "committedMemory": 253534160,
+        "capacity": 249595240,
+        "used": 244398120,
+        "available": 5197120
+      },
+      "code_space": {
+        "memorySize": 1474560,
+        "committedMemory": 1328160,
+        "capacity": 1112416,
+        "used": 1112416,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 11276288,
+        "committedMemory": 11190928,
+        "capacity": 10117040,
+        "used": 10117040,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 2732032,
+        "committedMemory": 2732032,
+        "capacity": 2697792,
+        "used": 2697792,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 104.984,
+    "kernelCpuSeconds": 54.4966,
+    "cpuConsumptionPercent": 9.80212,
+    "maxRss": 258539520,
+    "pageFaults": {
+      "IORequired": 1153146,
+      "IONotRequired": 3298586
+    },
+    "fsActivity": {
+      "reads": 24850072,
+      "writes": 971744
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 64.6899,
+    "kernelCpuSeconds": 20.7133,
+    "cpuConsumptionPercent": 5.24913,
+    "fsActivity": {
+      "reads": 10928336,
+      "writes": 8
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "NVM_INC": "/root/.nvm/versions/node/v12.11.1/include/node",
+    "HOSTNAME": "6ae2a694b331",
+    "NVM_CD_FLAGS": "",
+    "TERM": "xterm",
+    "OLDPWD": "/alx-react/0x01-react_intro/task_4/dashboard",
+    "NVM_DIR": "/root/.nvm",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:",
+    "PATH": "/root/.nvm/versions/node/v12.11.1/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "PWD": "/alx-react/0x01-react_intro/task_4/dashboard/src",
+    "NODE_PATH": "/usr/lib/node_modules",
+    "SHLVL": "1",
+    "HOME": "/root",
+    "NVM_BIN": "/root/.nvm/versions/node/v12.11.1/bin",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "_": "/root/.nvm/versions/node/v12.11.1/bin/npm"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 67108864,
+      "hard": 67108864
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/librt.so.1",
+    "/usr/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2",
+    "/lib/x86_64-linux-gnu/libnss_files.so.2",
+    "/lib/x86_64-linux-gnu/libnss_dns.so.2",
+    "/lib/x86_64-linux-gnu/libresolv.so.2"
+  ]
+}
